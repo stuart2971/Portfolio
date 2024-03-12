@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+#container {
+    height: 300vh;
+    background-color: rgb(15 23 42);
+}
+.logos {
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+.logos:hover {
+    opacity: 1;
+}
+
+#container {
+    height: 900vh;
+}
