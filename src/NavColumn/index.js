@@ -6,17 +6,17 @@ function NavColumn() {
     const [activeTab, setActiveTab] = useState("about");
 
     return (
-        <div className="flex flex-col justify-between h-full">
+        <div className="flex flex-col justify-between md:h-full">
             {/* Top Content */}
             <div>
                 <h1 className="text-6xl text-white font-bold mb-4">
                     Stuart Fong
                 </h1>
                 <h2 className="text-2xl mb-2">Full Stack Developer</h2>
-                <p className="text-lg mb-24">
+                <p className="text-lg mb-4 md:mb-24">
                     Seeking Opportunities to Learn and Innovate
                 </p>
-                <TableOfContentsItem
+                {/* <TableOfContentsItem
                     label="about"
                     isActive={activeTab === "about"}
                     destination="#about"
@@ -26,12 +26,12 @@ function NavColumn() {
                     label="experience"
                     isActive={activeTab === "experience"}
                     setActiveTab={setActiveTab}
-                />
-                <TableOfContentsItem
+                /> */}
+                {/* <TableOfContentsItem
                     label="projects"
                     isActive={activeTab === "projects"}
                     setActiveTab={setActiveTab}
-                />
+                /> */}
             </div>
             {/* Bottom Content */}
             <div className="flex ">

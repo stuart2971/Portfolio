@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 #container {
-    height: 300vh;
+    min-height: 130em;
     background-color: rgb(15 23 42);
 }
 .logos {
@@ -14,8 +14,4 @@
 }
 .logos:hover {
     opacity: 1;
-}
-
-#container {
-    height: 900vh;
 }

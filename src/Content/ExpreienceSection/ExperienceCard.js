@@ -8,9 +8,9 @@ function ExperienceCard({
     techStack,
 }) {
     return (
-        <div className="flex flex-row pr-4 mb-4">
+        <div className="flex flex-col md:flex-row pr-4 mb-4">
             <div className="w-38">
-                <p className="text-sm mt-1">{timeWorked}</p>
+                <p className="text-sm mt-1 pl-8 md:pl-0">{timeWorked}</p>
             </div>
             <div className="max-w-96 pl-8">
                 <p className="text-white font-semibold">
