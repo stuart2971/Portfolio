@@ -16,7 +16,7 @@ function NavColumn() {
                 <p className="text-lg mb-4 md:mb-24">
                     Seeking Opportunities to Learn and Innovate
                 </p>
-                {/* <TableOfContentsItem
+                <TableOfContentsItem
                     label="about"
                     isActive={activeTab === "about"}
                     destination="#about"
@@ -26,12 +26,12 @@ function NavColumn() {
                     label="experience"
                     isActive={activeTab === "experience"}
                     setActiveTab={setActiveTab}
-                /> */}
-                {/* <TableOfContentsItem
+                />
+                <TableOfContentsItem
                     label="projects"
                     isActive={activeTab === "projects"}
                     setActiveTab={setActiveTab}
-                /> */}
+                />
             </div>
             {/* Bottom Content */}
             <div className="flex ">

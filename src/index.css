@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 #container {
-    min-height: 130em;
+    min-height: 250em;
     background-color: rgb(15 23 42);
 }
 .logos {

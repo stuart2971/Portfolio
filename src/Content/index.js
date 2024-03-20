@@ -1,4 +1,9 @@
 import ExperienceCard from "./ExpreienceSection/ExperienceCard";
+import AE1 from "./Images/AE_1.png";
+import AE2 from "./Images/AE_2.png";
+import AE3 from "./Images/AE_3.png";
+import Population_1 from "./Images/Population_1.png";
+import Population_2 from "./Images/Population_2.png";
 
 function Content() {
     return (
@@ -79,7 +84,27 @@ function Content() {
                     </a>
                 </div>
             </section>
-            {/* <section id="projects"></section> */}
+            <section id="projects" className="mt-4">
+                <ExperienceCard
+                    jobTitle="Appletree Express"
+                    company=""
+                    timeWorked="Oct 2021 - Dec 2021"
+                    jobDescription="I crafted a website for Appletree restaurant, complete with a sandwich builder for custom orders and easy online ordering capabilities, streamlining the dining experience for customers."
+                    techStack={["React", "SCSS"]}
+                />
+                <img src={AE1} className="rounded mt-4" />
+                <img src={AE2} className="rounded mt-4" />
+                <img src={AE3} className="rounded mt-4 mb-4" />
+                <ExperienceCard
+                    jobTitle="Population Visualizer"
+                    company=""
+                    timeWorked="July 2019 - July 2019"
+                    jobDescription="I created a website utilizing an API to fetch population data, which was then integrated into a 3D model, allowing users to visualize and interact with population densities across different countries dynamically."
+                    techStack={["ThreeJS"]}
+                />
+                <img src={Population_1} className="rounded mt-4" />
+                <img src={Population_2} className="rounded mt-4" />
+            </section>
         </div>
     );
 }

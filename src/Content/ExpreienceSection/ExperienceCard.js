@@ -14,7 +14,7 @@ function ExperienceCard({
             </div>
             <div className="max-w-96 pl-8">
                 <p className="text-white font-semibold">
-                    {jobTitle} · {company}
+                    {jobTitle} {company ? `· ${company}` : ""}
                 </p>
                 <p>{jobDescription}</p>
                 <ul className="flex flex-wrap mt-2">
