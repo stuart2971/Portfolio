@@ -1,13 +1,25 @@
 import ExperienceCard from "./ExpreienceSection/ExperienceCard";
-import AE1 from "./Images/AE_1.png";
-import AE2 from "./Images/AE_2.png";
-import AE3 from "./Images/AE_3.png";
-import Population_1 from "./Images/Population_1.png";
-import Population_2 from "./Images/Population_2.png";
+import { useState } from "react";
 
 function Content() {
+    const [selectedExperience, setSelectedExperience] = useState("");
+    console.log(selectedExperience);
+
     return (
         <div>
+            {selectedExperience !== "" && (
+                <>
+                    <div id="overlay" className="fixed z-10"></div>
+                    <div
+                        className="fixed top-0 right-0 text-white z-20"
+                        onClick={() => {
+                            setSelectedExperience("");
+                        }}
+                    >
+                        ✖
+                    </div>
+                </>
+            )}
             <section id="about">
                 <p className="mb-4">
                     Back in my early teenage years, at the age of 13, I embarked
@@ -45,6 +57,8 @@ function Content() {
                     timeWorked="Sep 2022 - Apr 2023"
                     jobDescription="Contributed significantly to enhancing the user experience by actively engaging in the development of a new platform version. Responsibilities included identifying and resolving bugs, implementing new features, and ultimately improving overall user satisfaction. Demonstrated effective collaboration with the team to ensure tasks were completed on time, meeting milestone deadlines and ensuring the smooth progress of the project."
                     techStack={["JavaScript", "React", "CSHTML", "CSS", "C++"]}
+                    link="https://www.iconect.com/"
+                    setSelectedExperience={setSelectedExperience}
                 />
                 <ExperienceCard
                     jobTitle="Full Stack Developer"
@@ -59,6 +73,8 @@ function Content() {
                         "Python",
                         "Node",
                     ]}
+                    link="https://wowa.ca/"
+                    setSelectedExperience={setSelectedExperience}
                 />
                 <ExperienceCard
                     jobTitle="Full Stack Developer"
@@ -66,6 +82,7 @@ function Content() {
                     timeWorked="Sep 2020 - May 2021"
                     jobDescription="Collaborated closely with the client to design, develop, and launch a website, enhancing brand awareness and promotional efforts, while also offering ongoing support through analytics and requested modifications for independent website operation and maintenance."
                     techStack={["JavaScript", "React", "HTML", "CSS"]}
+                    setSelectedExperience={setSelectedExperience}
                 />
                 <ExperienceCard
                     jobTitle="Data Analyst"
@@ -73,6 +90,8 @@ function Content() {
                     timeWorked="Oct 2017 - May 2018"
                     jobDescription="Developed image data processing algorithms for Alzheimer's disease research, significantly advancing scientific understanding. Utilized strong written communication skills to document findings and create comprehensive reports, promoting knowledge sharing within the research community."
                     techStack={["MATLAB"]}
+                    link="https://www.robarts.ca/index.html"
+                    setSelectedExperience={setSelectedExperience}
                 />
                 <div className="w-full text-center ">
                     <a
@@ -91,19 +110,17 @@ function Content() {
                     timeWorked="Oct 2021 - Dec 2021"
                     jobDescription="I crafted a website for Appletree restaurant, complete with a sandwich builder for custom orders and easy online ordering capabilities, streamlining the dining experience for customers."
                     techStack={["React", "SCSS"]}
+                    link="https://appletree-bwr9pfpqv-stuart2971s-projects.vercel.app/"
+                    setSelectedExperience={setSelectedExperience}
                 />
-                <img src={AE1} className="rounded mt-4" />
-                <img src={AE2} className="rounded mt-4" />
-                <img src={AE3} className="rounded mt-4 mb-4" />
                 <ExperienceCard
                     jobTitle="Population Visualizer"
                     company=""
                     timeWorked="July 2019 - July 2019"
                     jobDescription="I created a website utilizing an API to fetch population data, which was then integrated into a 3D model, allowing users to visualize and interact with population densities across different countries dynamically."
                     techStack={["ThreeJS"]}
+                    setSelectedExperience={setSelectedExperience}
                 />
-                <img src={Population_1} className="rounded mt-4" />
-                <img src={Population_2} className="rounded mt-4" />
             </section>
         </div>
     );
