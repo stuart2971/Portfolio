@@ -7,6 +7,8 @@ import Population_1 from "./Images/Population_1.png";
 import Population_2 from "./Images/Population_2.png";
 import WOWA_1 from "./Images/WOWA_1.png";
 import WOWA_2 from "./Images/WOWA_2.png";
+import LB_1 from "./Images/LB_1.png";
+import LB_2 from "./Images/LB_2.png";
 
 const IMAGES = {
     "Appletree Express": [
@@ -15,12 +17,16 @@ const IMAGES = {
         <img src={AE_3} alt="Appletree Express" />,
     ],
     "Population Visualizer": [
-        <img src={Population_1} alt="Appletree Express" />,
-        <img src={Population_2} alt="Appletree Express" />,
+        <img src={Population_1} alt="Population Visualizer China Example" />,
+        <img src={Population_2} alt="Population Visualizer Canada Example" />,
     ],
     "WOWA Leads": [
-        <img src={WOWA_1} alt="Appletree Express" />,
-        <img src={WOWA_2} alt="Appletree Express" />,
+        <img src={WOWA_1} alt="WOWA Concrete Calculator" />,
+        <img src={WOWA_2} alt="WOWA Gravel Calculator" />,
+    ],
+    "The Lazy Beaver Company": [
+        <img src={LB_1} alt="Lazy Beaver Home Page" />,
+        <img src={LB_2} alt="Lazy Beaver Product Page" />,
     ],
 };
 
@@ -140,8 +146,9 @@ function Content() {
                     jobDescription="Collaborated closely with the client to design, develop, and launch a website, enhancing brand awareness and promotional efforts, while also offering ongoing support through analytics and requested modifications for independent website operation and maintenance."
                     techStack={["JavaScript", "React", "HTML", "CSS"]}
                     setSelectedExperience={setSelectedExperience}
+                    link="https://autopot.webflow.io/"
                     selectedExperience={selectedExperience}
-                    images={IMAGES.iCONECT}
+                    images={IMAGES["The Lazy Beaver Company"]}
                     imageNum={imageNum}
                 />
                 <ExperienceCard
